@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxform:it_note    [DHX documentation]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxform:it_note</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/docs/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">DHX documentation</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>        <form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/docs/doku.php?id=dhtmlxform:it_note"  class="breadcrumbs" title="dhtmlxform:it_note">it_note</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><a href="/dhtmlx/docs/doku.php?id=dhtmlxform:toc" class="media" title="dhtmlxform:toc"></a><a href="index.html" class="wikilink1" title="dhtmlxform:toc">Form</a></div><div class='arrow'></div><div class='backlink'><a href="dhtmlxform___form_operations.html" class="wikilink1" title="dhtmlxform:form_operations">Items Operations</a></div></div>
+
+</p>
+
+<h1><a name="details_block_under_the_input" id="details_block_under_the_input">Details block under the input</a></h1>
+<div class="level1">
+
+<p>
+To add the details block under an input, use the <strong>note</strong> attribute.
+</p>
+
+<p>
+<img src="dhtmlxform___details_block_note_.png"  class="media" alt="" />
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>note</strong> - (<em>object</em>) creates the details block which is placed under the input</div>
+<ul>
+<li class="level3"><div class="li"> <strong>text</strong> - (<em>string</em>) the text of the block</div>
+</li>
+<li class="level3"><div class="li"> <strong>width</strong> - (<em>integer</em>) the width of the block</div>
+</li>
+</ul>
+</li>
+</ul>
+<pre class="code javascript">formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>
+         type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> 
+         <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;prj_name&quot;</span><span class="sy0">,</span> 
+         label<span class="sy0">:</span> <span class="st0">&quot;Project Name&quot;</span><span class="sy0">,</span> 
+         note<span class="sy0">:</span> <span class="br0">&#123;</span>
+	     text<span class="sy0">:</span> <span class="st0">&quot;Enter your project name here. This field is required.&quot;</span><span class="sy0">,</span>
+             width<span class="sy0">:</span><span class="nu0">300</span>
+	 <span class="br0">&#125;</span>
+<span class="br0">&#125;</span><span class="br0">&#93;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="80-678" /><input type="hidden" name="rev" value="1361883996" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Edit" class="button" title="Details block under the input" /></div></form></div>
+<h3><a name="related_methods" id="related_methods">Related methods</a></h3>
+<div class="level3">
+
+<p>
+
+There are 2 methods you can use to set add/remove the note block dynamically:
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxform___api_method_dhtmlxform_setnote.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_setnote">setNote()</a> - adds the note block under the specified input;</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxform___api_method_dhtmlxform_clearnote.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_clearnote">clearNote()</a> - removes the note block from the input.</div>
+</li>
+</ul>
+<pre class="code javascript">myForm.<span class="me1">setNote</span><span class="br0">&#40;</span><span class="st0">'prj_name'</span><span class="sy0">,</span> <span class="br0">&#123;</span>text<span class="sy0">:</span><span class="st0">&quot;I'm the note block&quot;</span><span class="br0">&#125;</span><span class="br0">&#41;</span>;
+...
+<span class="me1">myForm</span>.<span class="me1">clearNote</span><span class="br0">&#40;</span><span class="st0">'prj_name'</span><span class="br0">&#41;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="679-" /><input type="hidden" name="rev" value="1361883996" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Edit" class="button" title="Related methods" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxform/it_note.txt &middot; Last modified: 2013/02/26 17:06 by 192.168.1.111      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!--<form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>-->
+        <!--<form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_index" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/docs/lib/exe/indexer.php?id=dhtmlxform%3Ait_note&amp;1366131675" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 Dinamenta, UAB<br />All rights reserved.</div>
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:it_note" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>    	    </div>
+</body>
+</html>

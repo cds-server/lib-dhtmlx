@@ -1,0 +1,13 @@
+dhtmlxaccordion___accordion.png
+icons___file.gif
+icons___accordion.gif
+common___any_ed.gif
+dhtmlxlayout___04.png
+dhtmlxlayout___01.png
+dhtmlxlayout___02.png
+dhtmlxlayout___03.png
+dhtmlxaccordion___accord_modes.png
+dhtmlxaccordion___accordskyblue1.png
+dhtmlxaccordion___accordweb.png
+dhtmlxaccordion___icons_in_header.png
+dhtmlxaccordion___accordion_overview2.png

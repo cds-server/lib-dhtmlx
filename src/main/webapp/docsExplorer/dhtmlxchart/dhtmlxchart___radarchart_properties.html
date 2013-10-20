@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxchart:radarchart_properties    [DHX documentation]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxchart:radarchart_properties</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/docs/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">DHX documentation</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>        <form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/docs/doku.php?id=dhtmlxchart:radarchart_properties"  class="breadcrumbs" title="dhtmlxchart:radarchart_properties">radarchart_properties</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><a href="/dhtmlx/docs/doku.php?id=dhtmlxchart:toc" class="media" title="dhtmlxchart:toc"></a><a href="index.html" class="wikilink1" title="dhtmlxchart:toc">dhtmlxchart</a></div><div class='arrow'></div><div class='backlink'><a href="dhtmlxchart___configuration_properties.html" class="wikilink1" title="dhtmlxchart:configuration_properties">Configuration properties</a></div></div>
+</p>
+
+
+
+<h1><a name="radar_chart_properties" id="radar_chart_properties">Radar chart properties</a></h1>
+<div class="level1">
+
+<p>
+Configuration properties are set in the chart constructor. Some of them are mandatory, others - optional.
+</p>
+<pre class="code javascript"><span class="kw2">var</span> radarChart <span class="sy0">=</span>  <span class="kw2">new</span> dhtmlXChart<span class="br0">&#40;</span><span class="br0">&#123;</span>
+    view<span class="sy0">:</span><span class="st0">&quot;radar&quot;</span><span class="sy0">,</span>
+    container<span class="sy0">:</span><span class="st0">&quot;chart_container&quot;</span><span class="sy0">,</span>
+    value<span class="sy0">:</span><span class="st0">&quot;#sales#&quot;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span></pre>
+</div>
+
+<h4><a name="mandatory_properties" id="mandatory_properties">Mandatory properties</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radarcontainer.html" class="wikilink1" title="dhtmlxchart:property_radarcontainer">container</a> - the id of an html container where you want display the chart</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radartype.html" class="wikilink1" title="dhtmlxchart:property_radartype">view</a> - the chart type</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radarvalue.html" class="wikilink1" title="dhtmlxchart:property_radarvalue">value</a> - a property of dataset that chart represents</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="optional_properties" id="optional_properties">Optional properties</a></h4>
+<div class="level4">
+
+<p>
+
+<strong>look and fill</strong>
+ 
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radaralpha.html" class="wikilink1" title="dhtmlxchart:property_radaralpha">alpha</a> - the chart area transparency. Has sense only if the  <a href="dhtmlxchart___property_radarfill.html" class="wikilink1" title="dhtmlxchart:property_radarfill">fill</a> property is enabled</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_disablelines.html" class="wikilink1" title="dhtmlxchart:property_disablelines">disableLines</a> - disables lines in a chart </div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_disableitems.html" class="wikilink1" title="dhtmlxchart:property_disableitems">disableItems</a> - disables items markers. Has sense only if the  <a href="dhtmlxchart___property_radarfill.html" class="wikilink1" title="dhtmlxchart:property_radarfill">fill</a> property is enabled</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radarfill.html" class="wikilink1" title="dhtmlxchart:property_radarfill">fill</a> - fills the chart area with the specified background color</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radarpadding.html" class="wikilink1" title="dhtmlxchart:property_radarpadding">padding</a> - an object that defines padding of chart content:</div>
+<ul>
+<li class="level2"><div class="li"> <em>top</em> - the top padding</div>
+</li>
+<li class="level2"><div class="li"> <em>bottom</em> - the bottom padding</div>
+</li>
+<li class="level2"><div class="li"> <em>left</em> - the left padding</div>
+</li>
+<li class="level2"><div class="li"> <em>right</em> - the right padding</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radarline.html" class="wikilink1" title="dhtmlxchart:property_radarline">line</a> - a chart line</div>
+<ul>
+<li class="level2"><div class="li"> <em>color</em> - the line color</div>
+</li>
+<li class="level2"><div class="li"> <em>width</em> - the line width</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_radaritem.html" class="wikilink1" title="dhtmlxchart:property_radaritem">item</a> - a chart point</div>
+<ul>
+<li class="level2"><div class="li"> <em>borderColor</em> - the outer color of a point</div>
+</li>
+<li class="level2"><div class="li"> <em>borderWidth</em> - the width of border lines</div>
+</li>
+<li class="level2"><div class="li"> <em>color</em> - the inner color of a point</div>
+</li>
+<li class="level2"><div class="li"> <em>radius</em> - the item radius</div>
+</li>
+<li class="level2"><div class="li"> <em>type</em> - the shape of points</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+<strong>item details</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___dhxtooltip.html" class="wikilink1" title="dhtmlxchart:dhxtooltip">tooltip</a> - a template for item tooltips</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___property_details.html" class="wikilink1" title="dhtmlxchart:property_details">legend</a> - a template for element text in legend block</div>
+<ul>
+<li class="level3"><div class="li"> <em>width</em> - the block width</div>
+</li>
+<li class="level3"><div class="li"> <em>align</em> - the horizontal alignment of the block: “left”, “right” or “center”</div>
+</li>
+<li class="level3"><div class="li"> <em>valign</em> - the vertical alignment of the block: “top”,“bottom” or “middle”</div>
+</li>
+<li class="level3"><div class="li"> <em>layout</em> - a layout that defines text stretching in horizontal or vertical direction :“x” or “y”</div>
+</li>
+<li class="level3"><div class="li"> <em>padding</em> - the legend block padding</div>
+</li>
+<li class="level3"><div class="li"> <em>margin</em> - the legend block margin</div>
+</li>
+<li class="level3"><div class="li"> <em>marker</em> - an object that defines markers in the details block</div>
+<ul>
+<li class="level5"><div class="li"> radius - defines the radius of markers</div>
+</li>
+<li class="level5"><div class="li"> type - the marker shape</div>
+</li>
+<li class="level5"><div class="li"> width - the marker width</div>
+</li>
+<li class="level5"><div class="li"> height - the marker height</div>
+</li>
+</ul>
+</li>
+<li class="level3"><div class="li"> <em>toggle</em> - enables/disables the possibility to hide/show a graph by clicking on the graph legend item</div>
+</li>
+<li class="level3"><div class="li"> <em>values</em> - the legend items</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<strong>scales</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___radar_xaxis.html" class="wikilink1" title="dhtmlxchart:radar_xaxis">xAxis</a> - the horizontal scale</div>
+<ul>
+<li class="level3"><div class="li"> <em>lineColor</em> - the color of lines</div>
+</li>
+<li class="level3"><div class="li"> <em>template</em> - the template for radial titles</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___radar_yaxis.html" class="wikilink1" title="dhtmlxchart:radar_yaxis">yAxis</a> - the vertical scale</div>
+<ul>
+<li class="level3"><div class="li"> <em>start</em> - the mininum scale value</div>
+</li>
+<li class="level3"><div class="li"> <em>end</em> - the maximum scale value</div>
+</li>
+<li class="level3"><div class="li"> <em>step</em> - the scale step</div>
+</li>
+<li class="level3"><div class="li"> <em>template</em> - a template for scale markers. By default, it is defined by the &#039;start&#039;, &#039;step&#039; and &#039;end&#039; attributes</div>
+</li>
+<li class="level3"><div class="li"> <em>lineShape</em> - the type of lines: &#039;line&#039; or &#039;arc&#039;</div>
+</li>
+<li class="level3"><div class="li"> <em>lineColor</em> - the color of scale arcs</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+<strong>data manipulation</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___dhxgroup.html" class="wikilink1" title="dhtmlxchart:dhxgroup">group</a> - groups data by a certain property</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxchart___dhxsorting.html" class="wikilink1" title="dhtmlxchart:dhxsorting">sort</a> - sorts dataset</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="105-" /><input type="hidden" name="rev" value="1363730510" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Edit" class="button" title="Radar chart properties" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxchart/radarchart_properties.txt &middot; Last modified: 2013/03/20 02:01 by 192.168.1.111      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!--<form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>-->
+        <!--<form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_index" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/docs/lib/exe/indexer.php?id=dhtmlxchart%3Aradarchart_properties&amp;1366131633" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 Dinamenta, UAB<br />All rights reserved.</div>
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxchart:radarchart_properties" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>    	    </div>
+</body>
+</html>

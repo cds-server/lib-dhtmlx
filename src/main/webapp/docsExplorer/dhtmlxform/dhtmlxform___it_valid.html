@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxform:it_valid    [DHX documentation]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxform:it_valid</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/docs/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">DHX documentation</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>        <form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/docs/doku.php?id=dhtmlxform:it_valid"  class="breadcrumbs" title="dhtmlxform:it_valid">it_valid</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#validation" class="toc">Validation</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#enabling_validation" class="toc">Enabling validation</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#live_validation" class="toc">Live validation</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#required_fields" class="toc">Required fields</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#marking_validation_errors" class="toc">Marking validation errors</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#validation_events" class="toc">Validation events</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#validation_rules" class="toc">Validation rules</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#standard_rules" class="toc">Standard rules</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#custom_rules" class="toc">Custom rules</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#regular_expressions" class="toc">Regular expressions</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#assigning_validation_rules_dynamically" class="toc">Assigning validation rules dynamically</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><a href="/dhtmlx/docs/doku.php?id=dhtmlxform:toc" class="media" title="dhtmlxform:toc"></a><a href="index.html" class="wikilink1" title="dhtmlxform:toc">dhtmlxForm</a></div><div class='arrow'></div><div class='backlink'><a href="dhtmlxform___form_operations.html" class="wikilink1" title="dhtmlxform:form_operations">Items Operations</a></div></div>
+
+</p>
+
+<h1><a name="validation" id="validation">Validation</a></h1>
+<div class="level1">
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="86-111" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Validation" /></div></form></div>
+<h2><a name="enabling_validation" id="enabling_validation">Enabling validation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> To enable validation you need to specify property <strong>validate</strong> and set it to the desired <span class="curid"><a href="dhtmlxform___it_valid.html" class="wikilink1" title="dhtmlxform:it_valid">rule</a></span>.<br/>
+ <br/>
+ <pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span><span class="st0">&quot;username&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;User Name&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span> <span class="st0">&quot;NotEmpty&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;
+<span class="kw2">var</span> dhxForm <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXForm<span class="br0">&#40;</span><span class="st0">&quot;dhxFormObj&quot;</span><span class="sy0">,</span> formData<span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> You can specify several validation rules at once, by separating them with comma.<br/>
+ <br/>
+ <pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span><span class="st0">&quot;dateOfbirth&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Date of Birth&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span><span class="st0">&quot;NotEmpty,ValidNumeric&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;
+<span class="kw2">var</span> dhxForm <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXForm<span class="br0">&#40;</span><span class="st0">&quot;dhxFormObj&quot;</span><span class="sy0">,</span> formData<span class="br0">&#41;</span>;</pre>
+<p>
+ <em>With such markup, each time when you call methods <a href="dhtmlxform___api_method_dhtmlxform_save.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_save">save()</a> and <a href="dhtmlxform___api_method_dhtmlxform_send.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_send">send()</a>, validation will fire.</em>
+</p>
+</div>
+</li>
+</ul>
+
+<p>
+
+You can also force form validation using the <a href="dhtmlxform___api_method_dhtmlxform_validate.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_validate">validate()</a> method:
+</p>
+<pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span><span class="st0">&quot;username&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;User Name&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span> <span class="st0">&quot;NotEmpty&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+         	<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;button&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;btn&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="st0">&quot;validate&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;<span class="br0">&#93;</span>;
+<span class="kw2">var</span> myForm <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXForm<span class="br0">&#40;</span><span class="st0">&quot;form_container&quot;</span><span class="sy0">,</span> formData<span class="br0">&#41;</span>;
+&nbsp;
+myForm.<span class="me1">attachEvent</span><span class="br0">&#40;</span><span class="st0">&quot;onButtonClick&quot;</span><span class="sy0">,</span> <span class="kw2">function</span><span class="br0">&#40;</span>id<span class="br0">&#41;</span> <span class="br0">&#123;</span> myForm.<span class="me1">validate</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="br0">&#125;</span> <span class="br0">&#41;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="112-1351" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Enabling validation" /></div></form></div>
+<h2><a name="live_validation" id="live_validation">Live validation</a></h2>
+<div class="level2">
+
+<p>
+dhtmlxForm provides support for the Live Validation mode - a mode when  validation is invoked just after an input goes out of focus (in the standard mode validation is invoked when the user clicks the submit button).
+</p>
+
+<p>
+To enable the Live Validation mode, you should call the <a href="dhtmlxform___api_method_dhtmlxform_enablelivevalidation.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_enablelivevalidation">enableLiveValidation()</a> method with the <em>true</em> parameter.
+</p>
+<pre class="code javascript">myForm.<span class="me1">enableLiveValidation</span><span class="br0">&#40;</span><span class="kw2">true</span><span class="br0">&#41;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1352-1832" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Live validation" /></div></form></div>
+<h2><a name="required_fields" id="required_fields">Required fields</a></h2>
+<div class="level2">
+
+<p>
+The library provides an easy way to treat the required fields - attribute <strong>required</strong>. Setting the attribute for an input will add   the <img src="dhtmlxform___requiredicon.png"  class="media" alt="" /> icon after its label and assign the &#039;<em>NotEmpty</em>&#039; validation rule to it.
+</p>
+
+<p>
+<img src="dhtmlxform___required_fields.png"  class="media" alt="" />
+</p>
+
+<p>
+<acronym title="By the way">BTW</acronym>, you can add any additional validation rule(s) to the required fields. For example, for the &#039;E-mail&#039;/&#039;Confirm e-mail&#039; fields (in the image above) you can set the <em>ValidEmail</em> rule (in addition to  <em>NotEmpty</em> ) to check whether the input value is correct, i.e. the form will check whether the field contains any value and if it does, check whether this value has the correct format. 
+</p>
+<pre class="code javascript">formData <span class="sy0">=</span> <span class="br0">&#91;</span>
+	<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;prj_name&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Project Name&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="st0">&quot;My Project&quot;</span><span class="sy0">,</span> required<span class="sy0">:</span> <span class="kw2">true</span><span class="br0">&#125;</span><span class="sy0">,</span>
+	<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;prj_descr&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Project Description&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="st0">&quot;My project is great!&quot;</span><span class="sy0">,</span> rows<span class="sy0">:</span> <span class="nu0">3</span><span class="br0">&#125;</span><span class="sy0">,</span>
+	<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;email&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;E-mail&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="st0">&quot;&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span> <span class="st0">&quot;ValidEmail&quot;</span><span class="sy0">,</span> required<span class="sy0">:</span> <span class="kw2">true</span><span class="br0">&#125;</span><span class="sy0">,</span>
+	<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;email2&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Confirm e-mail&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span> <span class="st0">&quot;ValidEmail&quot;</span><span class="sy0">,</span> value<span class="sy0">:</span> <span class="st0">&quot;&quot;</span><span class="sy0">,</span> required<span class="sy0">:</span> <span class="kw2">true</span><span class="br0">&#125;</span>
+<span class="br0">&#93;</span>;</pre>
+<p>
+ <em>In the image above validation failed for  the <strong>Email</strong> field.</em>
+<br/>
+
+<br/>
+
+</p>
+
+<p>
+<strong>Note</strong>, there is a special method that will allow you to make/unmake a certain field required - <a href="dhtmlxform___api_method_dhtmlxform_setrequired.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_setrequired">setRequired()</a>.
+</p>
+<pre class="code javascript">myForm.<span class="me1">setRequired</span><span class="br0">&#40;</span><span class="st0">&quot;prj_name&quot;</span><span class="sy0">,</span><span class="kw2">true</span><span class="br0">&#41;</span>; <span class="co1">//makes the input with the name 'prj_name' required</span>
+...
+<span class="me1">myForm</span>.<span class="me1">setRequired</span><span class="br0">&#40;</span><span class="st0">&quot;name&quot;</span><span class="sy0">,</span><span class="kw2">false</span><span class="br0">&#41;</span>; <span class="co1">//makes the input with the name 'prj_name' unrequired</span></pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1833-3437" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Required fields" /></div></form></div>
+<h2><a name="marking_validation_errors" id="marking_validation_errors">Marking validation errors</a></h2>
+<div class="level2">
+
+<p>
+
+When input fails validation it&#039;s marked with &#039;dhtmlx_validation_error&#039; <em>css</em> class. So if you want to define custom styling you need to set those rule:
+</p>
+<pre class="code css">.dhtmlx_validation_error<span class="br0">&#123;</span>
+      ... any custom marking rules here ...
+<span class="br0">&#125;</span></pre>
+<p>
+The custom messages can be added by using validation events. 
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3438-3787" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Marking validation errors" /></div></form></div>
+<h2><a name="validation_events" id="validation_events">Validation events</a></h2>
+<div class="level2">
+
+<p>
+
+There are 4 validation events:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxform___event_onbeforevalidate.html" class="wikilink1" title="dhtmlxform:event_onbeforevalidate">onBeforeValidate</a> - starts before validation and allows to prepare input data to it (blockable)</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxform___event_onvalidatesuccess.html" class="wikilink1" title="dhtmlxform:event_onvalidatesuccess">onValidateSuccess</a> - fires if validation check for some field is positive</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxform___event_onvalidateerror.html" class="wikilink1" title="dhtmlxform:event_onvalidateerror">onValidateError</a>  - fires if validation check for some field is negative</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxform___event_onaftervalidate.html" class="wikilink1" title="dhtmlxform:event_onaftervalidate">onAfterValidate</a> - fires after validation, provides result of total validation</div>
+</li>
+</ul>
+
+<p>
+
+You can also handle <acronym title="HyperText Markup Language">HTML</acronym> input-related events, such as <strong>onblur</strong> (fires when the element which is in focus, loses that focus). For mode details, read article &#039;<a href="dhtmlxform___events_handling.html" class="wikilink1" title="dhtmlxform:events_handling">Events handling</a>&#039;, chapter &#039;<a href="dhtmlxform___events_handling.html" class="wikilink1" title="dhtmlxform:events_handling">Triggering HTML events</a>&#039;. 
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3788-4592" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Validation events" /></div></form></div>
+<h2><a name="validation_rules" id="validation_rules">Validation rules</a></h2>
+<div class="level2">
+
+<p>
+
+There are 3 types of rules:
+</p>
+<ol>
+<li class="level1"><div class="li"> Standard rules;</div>
+</li>
+<li class="level1"><div class="li"> Custom rules;</div>
+</li>
+<li class="level1"><div class="li"> Regural expressions.</div>
+</li>
+</ol>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4593-4714" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Validation rules" /></div></form></div>
+<h3><a name="standard_rules" id="standard_rules">Standard rules</a></h3>
+<div class="level3">
+
+<p>
+Standard rules are the next:
+</p>
+<ul>
+<li class="level1"><div class="li"> Empty;</div>
+</li>
+<li class="level1"><div class="li"> NotEmpty;</div>
+</li>
+<li class="level1"><div class="li"> ValidBoolean;</div>
+</li>
+<li class="level1"><div class="li"> ValidEmail;</div>
+</li>
+<li class="level1"><div class="li"> ValidInteger;</div>
+</li>
+<li class="level1"><div class="li"> ValidNumeric;</div>
+</li>
+<li class="level1"><div class="li"> ValidAplhaNumeric;</div>
+</li>
+<li class="level1"><div class="li"> ValidDatetime;</div>
+</li>
+<li class="level1"><div class="li"> ValidDate;</div>
+</li>
+<li class="level1"><div class="li"> ValidTime;</div>
+</li>
+<li class="level1"><div class="li"> ValidIPv4;</div>
+</li>
+<li class="level1"><div class="li"> ValidCurrency;</div>
+</li>
+<li class="level1"><div class="li"> ValidSSN; </div>
+</li>
+<li class="level1"><div class="li"> ValidSIN.</div>
+</li>
+</ul>
+<pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Number&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span><span class="st0">&quot;ValidEmail&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4715-5098" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Standard rules" /></div></form></div>
+<h3><a name="custom_rules" id="custom_rules">Custom rules</a></h3>
+<div class="level3">
+
+<p>
+Custom rules can be created by defining a custom function and using its name as the validation rule. Such function takes the only parameter - the <strong><em>field&#039;s value</em></strong> and if validation is successful returns <strong><em>true</em></strong>, otherwise  <strong><em>false</em></strong>.
+</p>
+<pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Number&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span><span class="st0">&quot;Greater100&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;
+...
+<span class="kw2">function</span> Greater100<span class="br0">&#40;</span>data<span class="br0">&#41;</span><span class="br0">&#123;</span> 
+        <span class="kw1">return</span> <span class="br0">&#40;</span>data<span class="sy0">&gt;</span><span class="nu0">100</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre>
+<p>
+In case, you want to validate a field just if it contains something (i.e. don&#039;t validate the field if it&#039;s empty), you should use the following technique:
+
+</p>
+<pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Number&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span><span class="st0">&quot;Greater100&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;
+...
+<span class="kw2">function</span> Greater100<span class="br0">&#40;</span>data<span class="br0">&#41;</span><span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>data<span class="sy0">==</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span> <span class="kw1">return</span> <span class="kw2">true</span>;<span class="co1">// returns 'true' if the field is empty</span>
+&nbsp;
+        <span class="kw1">return</span> <span class="br0">&#40;</span>data<span class="sy0">&gt;</span><span class="nu0">100</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="5099-5921" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Custom rules" /></div></form></div>
+<h3><a name="regular_expressions" id="regular_expressions">Regular expressions</a></h3>
+<div class="level3">
+
+<p>
+You can use a <strong>regural expression as value</strong> of validate attribute:
+</p>
+<pre class="code javascript"><span class="kw2">var</span> formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Number&quot;</span><span class="sy0">,</span> validate<span class="sy0">:</span><span class="st0">&quot;[0-9]+&quot;</span><span class="br0">&#125;</span><span class="br0">&#93;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="5922-6116" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Regular expressions" /></div></form></div>
+<h2><a name="assigning_validation_rules_dynamically" id="assigning_validation_rules_dynamically">Assigning validation rules dynamically</a></h2>
+<div class="level2">
+
+<p>
+There are 2 methods that let you to set/remove validation rules dynamically. They are:
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxform___api_method_dhtmlxform_setvalidation.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_setvalidation">setValidation()</a> - adds a validation rule to the input with the specified name;</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxform___api_method_dhtmlxform_clearvalidation.html" class="wikilink1" title="dhtmlxform:api_method_dhtmlxform_clearvalidation">clearValidation()</a> - removes all validation rules from the input.</div>
+</li>
+</ul>
+<pre class="code javascript">myForm.<span class="me1">setValidation</span><span class="br0">&#40;</span><span class="st0">'age'</span><span class="sy0">,</span> <span class="st0">'ValidInteger'</span><span class="br0">&#41;</span>;
+...
+<span class="me1">myForm</span>.<span class="me1">clearValidation</span><span class="br0">&#40;</span><span class="st0">'age'</span><span class="br0">&#41;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="6117-" /><input type="hidden" name="rev" value="1361884344" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit" class="button" title="Assigning validation rules dynamically" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxform/it_valid.txt &middot; Last modified: 2013/02/26 17:12 by 192.168.1.111      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!--<form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>-->
+        <!--<form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_index" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/docs/lib/exe/indexer.php?id=dhtmlxform%3Ait_valid&amp;1366131676" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 Dinamenta, UAB<br />All rights reserved.</div>
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:it_valid" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>    	    </div>
+</body>
+</html>

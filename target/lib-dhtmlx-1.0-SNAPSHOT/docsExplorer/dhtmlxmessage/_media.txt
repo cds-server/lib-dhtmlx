@@ -1,0 +1,13 @@
+icons___file.gif
+message_1.png
+dhtmlxmessage___confirm_sky_blue.png
+dhtmlxmessage___alertbox.png
+dhtmlxmessage___dhtmlxmessage_alert_box.png
+dhtmlxmessage___alert-warning.png
+dhtmlxmessage___alert-error.png
+dhtmlxmessage___dhtmlxmessage_confirm_box.png
+dhtmlxmessage___confirm_warning.png
+dhtmlxmessage___confirm-error.png
+dhtmlxmessage___dhtmlxmessage_notice_box.png
+dhtmlxmessage___confirm_web.png
+dhtmlxmessage___confirm_terrace_skin.png

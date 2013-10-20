@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxform:form_upload    [DHX documentation]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxform:form_upload</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/docs/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">DHX documentation</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>        <form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/docs/doku.php?id=dhtmlxform:form_upload"  class="breadcrumbs" title="dhtmlxform:form_upload">form_upload</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#upload" class="toc">Upload</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#attributes" class="toc">Attributes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#controls" class="toc">Controls</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#details" class="toc">Details</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#how_does_the_control_work" class="toc">How does the control work?</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#html5_html4_modes" class="toc">html5/html4 modes</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#flash_mode" class="toc">flash mode</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#sl_mode_loading_with_silverlight" class="toc">&#039;sl&#039; mode (loading with Silverlight)</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#related_methods_and_events" class="toc">Related methods and events</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><a href="/dhtmlx/docs/doku.php?id=dhtmlxform:toc" class="media" title="dhtmlxform:toc"></a><a href="index.html" class="wikilink1" title="dhtmlxform:toc">Form</a></div><div class='arrow'></div><div class='backlink'><a href="dhtmlxform___form_controls.html" class="wikilink1" title="dhtmlxform:form_controls">Items:types &amp; attributes</a></div></div>
+
+</p>
+
+<h1><a name="upload" id="upload">Upload</a></h1>
+<div class="level1">
+
+<p>
+An item that allows uploading multiple files and tracking the progress of individual file upload.
+</p>
+
+<p>
+<img src="dhtmlxform___upload.png"  class="media" alt="" />
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="86-234" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="Upload" /></div></form></div>
+<h2><a name="attributes" id="attributes">Attributes</a></h2>
+<div class="level2">
+
+<p>
+<strong><em>Common attributes:</em></strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>className</strong> - (<em>string</em>) the user-defined css class for the item</div>
+</li>
+<li class="level1"><div class="li"> <strong>disabled</strong> - (<em>boolean</em>) disables/enables the item</div>
+</li>
+<li class="level1"><div class="li"> <strong>hidden</strong> - (<em>boolean</em>) hides/shows the item. The default value - <em>false</em> (the item is shown)</div>
+</li>
+<li class="level1"><div class="li"> <strong>name</strong> - (<em>string</em>) the identification name. Used for referring to the item</div>
+</li>
+<li class="level1"><div class="li"> <strong>inputHeight</strong> - (<em>integer or auto</em>) the height of the item. The default value is <em>auto</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>inputWidth</strong> - (<em>integer or auto</em>) the width of the item. The default value is <em>auto</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>offsetLeft</strong> - (<em>integer</em>) sets the left relative offset of the item </div>
+</li>
+<li class="level1"><div class="li"> <strong>offsetTop</strong> - (<em>integer</em>) sets the top relative offset of the item </div>
+</li>
+<li class="level1"><div class="li"> <strong>disabled</strong> - (<em>boolean</em>) disables/enables the item. The default value - <em>false</em> </div>
+</li>
+<li class="level1"><div class="li"> <strong>userdata</strong> - (<em>object</em>) sets some user data for the item (<em>key:value</em> pairs)</div>
+</li>
+</ul>
+
+<p>
+<strong><em>Uploader-related attributes:</em></strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>mode</strong> - (<em>html5, html4, flash, sl</em>) allows you to manually set the mode in use. Beware, once you set the mode manually, the control will work in this mode permanently independently on the browser you use</div>
+</li>
+<li class="level1"><div class="li"> <strong>titleScreen</strong> - (<em>boolean</em>) defines whether the initial screen (when no files are selected) must be displayed. The default value -  <em>true</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>titleText</strong> - (<em>string</em>) the text of the initial screen. The default value - ”<em>Drag-n-Drop files here or click to select files for upload</em>”</div>
+</li>
+<li class="level1"><div class="li"> <strong>autoStart</strong> - (<em>boolean</em>) defines whether files must be immediately loaded after selecting. The default value - <em>false</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>autoRemove</strong> - (<em>boolean</em>) defines whether files must be removed from the item after complete downloading. The default value - <em>false</em></div>
+</li>
+</ul>
+
+<p>
+
+<strong><em><acronym title="Uniform Resource Locator">URL</acronym> attributes:</em></strong> 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>url</strong> - (<em>string</em>)  the path to the server-side script (relative to the index file) which will parse the requests received from the uploader. Used in the html5/html4 modes</div>
+</li>
+<li class="level1"><div class="li"> <strong>swfPath</strong> - (<em>string</em>) the path to the client flash script file relative to the index file </div>
+</li>
+<li class="level1"><div class="li"> <strong>swfUrl</strong> - (<em>string</em>) the path to the server script file (relative to the client flash script file) which will parse the requests. Used in the flash mode</div>
+</li>
+</ul>
+
+<p>
+
+<strong><em>Silverlight-related attributes:</em></strong> 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>slXap</strong> - (<em>string</em>)  the path to the client script file relative to the index file </div>
+</li>
+<li class="level1"><div class="li"> <strong>slUrl</strong> - (<em>string</em>) the full path to the server script file </div>
+</li>
+<li class="level1"><div class="li"> <strong>slLogs</strong> - (<em>”!enabled”</em>) enables the Silverlight logs</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="235-2696" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="Attributes" /></div></form></div>
+<h2><a name="controls" id="controls">Controls</a></h2>
+<div class="level2">
+
+<p>
+
+<img src="dhtmlxform___form_controls.png"  class="media" alt="" />
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="2697-2752" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="Controls" /></div></form></div>
+<h2><a name="details" id="details">Details</a></h2>
+<div class="level2">
+
+<p>
+The control can work in 3 modes:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>html5</strong> (multiple files selecting, tracking the progress, loading by Ajax, d-n-d for selecting files)</div>
+</li>
+<li class="level1"><div class="li"> <strong>flash</strong> (multiple files selecting, tracking the progress, loading by Flash)</div>
+</li>
+<li class="level1"><div class="li"> <strong>html4</strong> (works as a standard <acronym title="HyperText Markup Language">HTML</acronym> input upload control)</div>
+</li>
+<li class="level1"><div class="li"> <strong>sl</strong> (based on the Silverlight engine, experimental mode)</div>
+</li>
+</ol>
+
+<p>
+
+By default, the item uses the html5 mode, then flash if html5 isn&#039;t supported. If both html5 and flash aren&#039;t supported - html4.<br/>
+
+The <strong>sl</strong> mode can be invoked just manually.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="2753-3299" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="Details" /></div></form></div>
+<h2><a name="how_does_the_control_work" id="how_does_the_control_work">How does the control work?</a></h2>
+<div class="level2">
+
+<p>
+For providing loading, the control uses a script that gets files to load. The same script is used in all modes but with slight differences.
+</p>
+
+<p>
+Let&#039;s assume you have the folders tree as in:
+</p>
+
+<p>
+<img src="dhtmlxform___form_path.png"  class="media" alt="" />
+</p>
+
+<p>
+where 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>samples/07_uploader/01_basic_init.html</strong>  - the index file (currently selected). </div>
+</li>
+<li class="level1"><div class="li"> <strong>samples/07_uploader/php/dhtmlxform_item_upload.php</strong> - the server script we use.</div>
+</li>
+</ul>
+
+<p>
+
+<div class='dhx_note'><div class='dhx_note_img'>&nbsp;</div>
+To understand how the control saves files on the server side, please check the 'dhtmlxform_item_upload.php' file in the dhtmlxForm package (resided in the directory: dhtmlxForm\samples\07_uploader\php\ )
+</div>
+
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3300-3959" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="How does the control work?" /></div></form></div>
+<h3><a name="html5_html4_modes" id="html5_html4_modes">html5/html4 modes</a></h3>
+<div class="level3">
+
+<p>
+
+For <strong>html5/html4</strong> modes it&#039;s quite enough to set the <strong><em>url</em></strong> parameter:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>url</strong> - the path to the server script file <em>dhtmlxform_item_upload.php</em> relative to the index file <em>01_basic_init.html</em>, in our case the path will be “php/dhtmlxform_item_upload.php”</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3960-4259" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="html5/html4 modes" /></div></form></div>
+<h3><a name="flash_mode" id="flash_mode">flash mode</a></h3>
+<div class="level3">
+
+<p>
+
+For the <strong>flash mode</strong> you must specify 2 parameters: <strong>swfPath, swfUrl</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>swfPath</strong> - the path to the client flash script file <em>uploader.swf</em> relative to the index file <em>01_basic_init.html</em>, in our case the path will be ”../../codebase/ext/uploader.swf”</div>
+</li>
+<li class="level1"><div class="li"> <strong>swfUrl</strong> - the path to the server script file <em>dhtmlxform_item_upload.php</em> relative to the client flash script file <em>uploader.swf</em>, in our case the path will be ”../../samples/07_uploader/php/dhtmlxform_item_upload.php”</div>
+</li>
+</ul>
+
+<p>
+
+<div class='dhx_note'><div class='dhx_note_img'>&nbsp;</div>
+To provide correct running in all browsers you need to specify 3 parameters at a time.
+</div>
+</p>
+<pre class="code javascript">formdata <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>
+        type<span class="sy0">:</span> <span class="st0">&quot;upload&quot;</span><span class="sy0">,</span>
+        <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;myFiles&quot;</span><span class="sy0">,</span>
+        url<span class="sy0">:</span> <span class="st0">&quot;php/dhtmlxform_item_upload.php&quot;</span><span class="sy0">,</span>
+        swfPath<span class="sy0">:</span> <span class="st0">&quot;../../codebase/ext/uploader.swf&quot;</span><span class="sy0">,</span>
+        swfUrl<span class="sy0">:</span> <span class="st0">&quot;../../samples/07_uploader/php/dhtmlxform_item_upload.php&quot;</span>
+<span class="br0">&#125;</span><span class="br0">&#93;</span></pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4260-5147" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="flash mode" /></div></form></div>
+<h3><a name="sl_mode_loading_with_silverlight" id="sl_mode_loading_with_silverlight">&#039;sl&#039; mode (loading with Silverlight)</a></h3>
+<div class="level3">
+
+<p>
+<div class='dhx_note'><div class='dhx_note_img'>&nbsp;</div>
+Note, it's an experimental mode.
+</div>
+</p>
+
+<p>
+For the <strong>sl</strong> mode you can specify the next parameters:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>slXap</strong> - the path to the client script file <em>dhxupload.xap</em> relative to the index file <em>01_basic_init.html</em>, in our case the path will be ”../../codebase/ext/dhxupload.xap”;</div>
+</li>
+<li class="level1"><div class="li"> <strong>slUrl</strong> - the full path to the server script file <em>dhtmlxform_item_upload.php</em>.</div>
+</li>
+</ul>
+<pre class="code javascript">formData <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#123;</span>
+	type<span class="sy0">:</span> <span class="st0">&quot;upload&quot;</span><span class="sy0">,</span>
+	<span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;myFiles&quot;</span><span class="sy0">,</span>
+	mode<span class="sy0">:</span> <span class="st0">&quot;sl&quot;</span><span class="sy0">,</span> <span class="co1">// enables the sl mode</span>
+	url<span class="sy0">:</span> <span class="st0">&quot;dhtmlxform_item_upload.php&quot;</span><span class="sy0">,</span>
+	slXap<span class="sy0">:</span> <span class="st0">&quot;../../codebase/ext/dhxupload.xap&quot;</span><span class="sy0">,</span>
+	slUrl<span class="sy0">:</span> <span class="st0">&quot;http://localhost/dhtmlx/dhtmlxForm/samples/07_uploader/php/dhtmlxform_item_upload.php&quot;</span><span class="sy0">,</span> <span class="co1">// FULL path is required</span>
+<span class="br0">&#125;</span><span class="br0">&#93;</span>;</pre>
+<p>
+<strong>Related samples:</strong> folder <em>samples/07_uploader</em>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="5148-5944" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="'sl' mode (loading with Silverlight)" /></div></form></div>
+<h2><a name="related_methods_and_events" id="related_methods_and_events">Related methods and events</a></h2>
+<div class="level2">
+
+<p>
+The control has a number of self-specific methods.<br/>
+
+A full list of them you can find here - <a href="dhtmlxform___api_toc_alpha_form.html" class="wikilink1" title="dhtmlxform:api_toc_alpha_form">API Reference: upload-related methods</a>. <br/>
+
+The related to the control events can be found <a href="dhtmlxform___api_events_form.html" class="wikilink1" title="dhtmlxform:api_events_form">here</a>.<br/>
+
+</p>
+
+<p>
+Of course, you can carry on using any of common dhtmlxForm methods as well. 
+
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="5945-" /><input type="hidden" name="rev" value="1362148888" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit" class="button" title="Related methods and events" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxform/form_upload.txt &middot; Last modified: 2013/03/01 18:41 by 192.168.1.111      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!--<form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>-->
+        <!--<form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_index" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/docs/lib/exe/indexer.php?id=dhtmlxform%3Aform_upload&amp;1366131677" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 Dinamenta, UAB<br />All rights reserved.</div>
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxform:form_upload" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>    	    </div>
+</body>
+</html>

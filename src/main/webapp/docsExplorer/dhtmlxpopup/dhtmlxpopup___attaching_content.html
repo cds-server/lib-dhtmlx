@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxpopup:attaching_content    [DHX documentation]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxpopup:attaching_content</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/docs/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">DHX documentation</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>        <form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/docs/doku.php?id=dhtmlxpopup:attaching_content"  class="breadcrumbs" title="dhtmlxpopup:attaching_content">attaching_content</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#filling_pop-up_windows_with_content" class="toc">Filling pop-up windows with content</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#attaching_dhtmlx_components" class="toc">Attaching DHTMLX components</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#attaching_dom_elements" class="toc">Attaching DOM elements</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#attaching_the_html_markup" class="toc">Attaching the HTML markup</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#attaching_a_list" class="toc">Attaching a list</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#getting_list_s_items" class="toc">Getting list&#039;s items</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxpopup:toc">dhtmlxPopup</a></div></div>
+
+</p>
+
+<h1><a name="filling_pop-up_windows_with_content" id="filling_pop-up_windows_with_content">Filling pop-up windows with content</a></h1>
+<div class="level1">
+
+<p>
+dhtmlxPopup can have various content, such as:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxpopup___attaching_content.html" class="wikilink1" title="dhtmlxpopup:attaching_content">DHTMLX components</a></span>;</div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxpopup___attaching_content.html" class="wikilink1" title="dhtmlxpopup:attaching_content">DOM elements</a></span>;</div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="dhtmlxpopup___attaching_content.html" class="wikilink1" title="dhtmlxpopup:attaching_content">HTML markup</a></span>;</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="66-399" /><input type="hidden" name="rev" value="1363127046" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit" class="button" title="Filling pop-up windows with content" /></div></form></div>
+<h2><a name="attaching_dhtmlx_components" id="attaching_dhtmlx_components">Attaching DHTMLX components</a></h2>
+<div class="level2">
+
+<p>
+The table below presents DHTMLX components you can attach to a dhtmlxPopup object and code samples of such attaching.
+</p>
+
+<p>
+<div class='dhx_note'><div class='dhx_note_img'>&nbsp;</div>
+Each attach[NameofComponent] method returns the instance of the related component
+</div>
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Component  </th><th class="col1"> Code sample </th><th class="col2 centeralign">  Useful links  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">  <a href="../dhtmlxaccordion/index.html" class="wikilink1" title="dhtmlxaccordion:toc">dhtmlxAccordion</a>   </td><td class="col1"> <pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myAcc <span class="sy0">=</span> myPop.<span class="me1">attachAccordion</span><span class="br0">&#40;</span><span class="nu0">350</span><span class="sy0">,</span> <span class="nu0">300</span><span class="br0">&#41;</span>;</pre></td><td class="col2"> <strong>Sample:</strong> samples/04_attaches/09_attach_accordion.html<br/>
+ <strong><acronym title="Application Programming Interface">API</acronym> method:</strong> <a href="dhtmlxpopup___attachaccordion.html" class="wikilink1" title="dhtmlxpopup:attachaccordion">attachAccordion(width, height)</a></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">  <a href="../dhtmlxcalendar/index.html" class="wikilink1" title="dhtmlxcalendar:toc">dhtmlxCalendar</a>  </td><td class="col1"><pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myCalendar <span class="sy0">=</span> myPop.<span class="me1">attachCalendar</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre></td><td class="col2"><strong>Sample:</strong> samples/04_attaches/05_attach_calendar.html<br/>
+ <strong><acronym title="Application Programming Interface">API</acronym> method:</strong> <a href="dhtmlxpopup___attachcalendar.html" class="wikilink1" title="dhtmlxpopup:attachcalendar">attachCalendar()</a> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">  <a href="../dhtmlxform/index.html" class="wikilink1" title="dhtmlxform:toc">dhtmlxForm</a>  </td><td class="col1"><pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myForm <span class="sy0">=</span> myPop.<span class="me1">attachForm</span><span class="br0">&#40;</span><span class="br0">&#91;</span>
+	<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;input&quot;</span><span class="sy0">,</span>    label<span class="sy0">:</span> <span class="st0">&quot;Email Address&quot;</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;email&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+	<span class="br0">&#123;</span>type<span class="sy0">:</span> <span class="st0">&quot;password&quot;</span><span class="sy0">,</span> label<span class="sy0">:</span> <span class="st0">&quot;Password&quot;</span><span class="sy0">,</span>      <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;pwd&quot;</span><span class="br0">&#125;</span>
+<span class="br0">&#93;</span><span class="br0">&#41;</span>;</pre></td><td class="col2"><strong>Sample:</strong> samples/04_attaches/04_attach_form.html<br/>
+ <strong><acronym title="Application Programming Interface">API</acronym> method:</strong> <a href="dhtmlxpopup___attachform.html" class="wikilink1" title="dhtmlxpopup:attachform">attachForm(formData)</a> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  <a href="../dhtmlxgrid/index.html" class="wikilink1" title="dhtmlxgrid:toc">dhtmlxGrid</a>  </td><td class="col1"><pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myGrid <span class="sy0">=</span> myPop.<span class="me1">attachGrid</span><span class="br0">&#40;</span><span class="nu0">350</span><span class="sy0">,</span><span class="nu0">300</span><span class="br0">&#41;</span>;</pre></td><td class="col2"><strong>Sample:</strong> samples/04_attaches/06_attach_grid.html<br/>
+ <strong><acronym title="Application Programming Interface">API</acronym> method:</strong> <a href="dhtmlxpopup___attachgrid.html" class="wikilink1" title="dhtmlxpopup:attachgrid">attachGrid(width, height)</a></td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">  <a href="../dhtmlxlayout/index.html" class="wikilink1" title="dhtmlxlayout:toc">dhtmlxLayout</a>  </td><td class="col1"><pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myLayout <span class="sy0">=</span> myPop.<span class="me1">attachLayout</span><span class="br0">&#40;</span><span class="nu0">350</span><span class="sy0">,</span> <span class="nu0">300</span><span class="sy0">,</span> <span class="st0">&quot;3L&quot;</span><span class="br0">&#41;</span>;</pre></td><td class="col2"><strong>Sample:</strong> samples/04_attaches/08_attach_layout.html<br/>
+ <strong><acronym title="Application Programming Interface">API</acronym> method:</strong> <a href="dhtmlxpopup___attachlayout.html" class="wikilink1" title="dhtmlxpopup:attachlayout">attachLayout(width, height, pattern)</a></td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 centeralign">  <a href="../dhtmlxtabbar/index.html" class="wikilink1" title="dhtmlxtabbar:toc">dhtmlxTabbar</a>  </td><td class="col1"><pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myTabbar <span class="sy0">=</span> myPop.<span class="me1">attachTabbar</span><span class="br0">&#40;</span><span class="nu0">350</span><span class="sy0">,</span> <span class="nu0">300</span><span class="br0">&#41;</span>;</pre></td><td class="col2"><strong>Sample:</strong> samples/04_attaches/10_attach_tabbar.html<br/>
+ <strong><acronym title="Application Programming Interface">API</acronym> method:</strong> <a href="dhtmlxpopup___attachtabbar.html" class="wikilink1" title="dhtmlxpopup:attachtabbar">attachTabbar(width, height, mode)</a></td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 centeralign">  <a href="../dhtmlxtree/index.html" class="wikilink1" title="dhtmlxtree:toc">dhtmlxTree</a>  </td><td class="col1"><pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myTree <span class="sy0">=</span> myPop.<span class="me1">attachTree</span><span class="br0">&#40;</span><span class="nu0">350</span><span class="sy0">,</span><span class="nu0">300</span><span class="br0">&#41;</span>;</pre></td><td class="col2"><strong>Sample:</strong> samples/04_attaches/07_attach_tree.html<br/>
+ <strong><acronym title="Application Programming Interface">API</acronym> method:</strong> <a href="dhtmlxpopup___attachtree.html" class="wikilink1" title="dhtmlxpopup:attachtree">attachTree(width, height, rootId)</a></td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="400-2725" /><input type="hidden" name="rev" value="1363127046" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit" class="button" title="Attaching DHTMLX components" /></div></form></div>
+<h2><a name="attaching_dom_elements" id="attaching_dom_elements">Attaching DOM elements</a></h2>
+<div class="level2">
+
+<p>
+To attach a Dom element to a dhtmlxPopup instance you should use the <a href="dhtmlxpopup___attachobject.html" class="wikilink1" title="dhtmlxpopup:attachobject">attachObject</a> method:
+</p>
+<pre class="code javascript"><span class="sy0">&lt;</span>div id<span class="sy0">=</span><span class="st0">&quot;myObj&quot;</span><span class="sy0">&gt;</span>any custom text here<span class="sy0">&lt;/</span>div<span class="sy0">&gt;</span>
+&nbsp;
+<span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+     <span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+     myPop.<span class="me1">attachObject</span><span class="br0">&#40;</span><span class="st0">&quot;myObj&quot;</span><span class="br0">&#41;</span>;
+<span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="2726-3041" /><input type="hidden" name="rev" value="1363127046" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit" class="button" title="Attaching DOM elements" /></div></form></div>
+<h2><a name="attaching_the_html_markup" id="attaching_the_html_markup">Attaching the HTML markup</a></h2>
+<div class="level2">
+
+<p>
+To add the <acronym title="HyperText Markup Language">HTML</acronym> markup to a dhtmlxPopup instance you should use the <a href="dhtmlxpopup___attachhtml.html" class="wikilink1" title="dhtmlxpopup:attachhtml">attachHTML</a> method:
+</p>
+<pre class="code javascript"><span class="kw2">var</span> myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+myPop.<span class="me1">attachHTML</span><span class="br0">&#40;</span><span class="st0">&quot;any custom text here&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3042-3295" /><input type="hidden" name="rev" value="1363127046" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit" class="button" title="Attaching the HTML markup" /></div></form></div>
+<h2><a name="attaching_a_list" id="attaching_a_list">Attaching a list</a></h2>
+<div class="level2">
+
+<p>
+
+dhtmlxPopup provides a handy way to present list-like structures inside it. 
+</p>
+
+<p>
+<img src="dhtmlxpopup___list_popup_integration.png"  class="media" alt="" />
+</p>
+
+<p>
+To present data in the tabular view you should use the <a href="dhtmlxpopup___attachlist.html" class="wikilink1" title="dhtmlxpopup:attachlist">attachList</a> method as in:
+</p>
+<pre class="code javascript"><span class="kw2">var</span>  myPop <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXPopup<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+myPop.<span class="me1">attachList</span><span class="br0">&#40;</span><span class="st0">&quot;name,price&quot;</span><span class="sy0">,</span> <span class="br0">&#91;</span>
+		<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A5 Coupe&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;&amp;euro; 31,550&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+		<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A5 Sportback&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;&amp;euro; 30,990&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+		myPop.<span class="me1">separator</span><span class="sy0">,</span> <span class="co1">// use this struct for separator</span>
+		<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">3</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A6&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;&amp;euro; 30,990&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+		<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">4</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A6 Avant&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;&amp;euro; 37,450&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+		<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">5</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A6 Quattro&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;&amp;euro; 55,360&quot;</span><span class="br0">&#125;</span>
+<span class="br0">&#93;</span><span class="br0">&#41;</span>;</pre>
+<p>
+where 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>“name, price”</strong> - a comma-separated list of data properties that will be rendered in the list;</div>
+</li>
+<li class="level1"><div class="li"> <strong>[{id:.., name:…, price:…}]</strong> - the data available for rendering in the list;</div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxpopup___separator.html" class="wikilink1" title="dhtmlxpopup:separator">myPop.separator</a> - a special property of dhtmlxPopup that draws a single line. </div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3296-4300" /><input type="hidden" name="rev" value="1363127046" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit" class="button" title="Attaching a list" /></div></form></div>
+<h3><a name="getting_list_s_items" id="getting_list_s_items">Getting list&#039;s items</a></h3>
+<div class="level3">
+
+<p>
+To get the list&#039;s items you should use the <a href="dhtmlxpopup___getitemdata.html" class="wikilink1" title="dhtmlxpopup:getitemdata">getItemData()</a> method. 
+</p>
+
+<p>
+To get a specific item you should call the method with the row id inside:
+
+</p>
+<pre class="code javascript">myPop.<span class="me1">attachList</span><span class="br0">&#40;</span><span class="st0">&quot;name,price&quot;</span><span class="sy0">,</span> <span class="br0">&#91;</span>
+	<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A5 Coupe&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;31550&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+	<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A5 Sportback&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;30990&quot;</span><span class="br0">&#125;</span>
+<span class="br0">&#93;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="kw2">var</span> data <span class="sy0">=</span> myPop.<span class="me1">getItemData</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>;
+<span class="co1">// data = {id: 1, name: &quot;Audi A5 Coupe&quot;, price: &quot;31550&quot;}</span></pre>
+<p>
+To get all the items of the list you should call the method with no parameters:
+
+</p>
+<pre class="code javascript">myPop.<span class="me1">attachList</span><span class="br0">&#40;</span><span class="st0">&quot;name,price&quot;</span><span class="sy0">,</span> <span class="br0">&#91;</span>
+	<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A5 Coupe&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;31550&quot;</span><span class="br0">&#125;</span><span class="sy0">,</span>
+	<span class="br0">&#123;</span>id<span class="sy0">:</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="kw3">name</span><span class="sy0">:</span> <span class="st0">&quot;Audi A5 Sportback&quot;</span><span class="sy0">,</span> price<span class="sy0">:</span> <span class="st0">&quot;30990&quot;</span><span class="br0">&#125;</span>
+<span class="br0">&#93;</span><span class="br0">&#41;</span>;
+&nbsp;
+<span class="kw2">var</span> data <span class="sy0">=</span> myPop.<span class="me1">getItemData</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<span class="co1">// data = [</span>
+<span class="co1">//     {id: 1, name: &quot;Audi A5 Coupe&quot;, price: &quot;31550&quot;},</span>
+<span class="co1">//     {id: 2, name: &quot;Audi A5 Sportback&quot;, price: &quot;30990&quot;}</span>
+<span class="co1">// ]</span></pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4301-" /><input type="hidden" name="rev" value="1363127046" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit" class="button" title="Getting list's items" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxpopup/attaching_content.txt &middot; Last modified: 2013/03/13 02:24 by 192.168.1.165      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!--<form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>-->
+        <!--<form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_index" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/docs/lib/exe/indexer.php?id=dhtmlxpopup%3Aattaching_content&amp;1366131731" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 Dinamenta, UAB<br />All rights reserved.</div>
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxpopup:attaching_content" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>    	    </div>
+</body>
+</html>

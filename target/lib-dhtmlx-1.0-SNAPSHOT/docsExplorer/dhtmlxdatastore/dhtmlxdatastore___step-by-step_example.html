@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxdatastore:step-by-step_example    [DHX documentation]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Home Page"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxdatastore:step-by-step_example</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/docs/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">DHX documentation</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>        <form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="/dhtmlx/docs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/docs/doku.php?id=dhtmlxdatastore:step-by-step_example"  class="breadcrumbs" title="dhtmlxdatastore:step-by-step_example">step-by-step_example</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxdatastore:toc">dhtmlXDataStore</a></div></div>
+
+</p>
+
+<h1><a name="step-by-step_example" id="step-by-step_example">Step-by-step example</a></h1>
+<div class="level1">
+
+<p>
+You probably find it hard to think of situations where this “invisible store” would be useful.<br/>
+ 
+So, let&#039;s consider as example some company. It has some number of departments. Each department contains its employees. <br/>
+
+</p>
+
+<p>
+<img src="dhtmlxdatastore___datastore_company.png"  class="media" alt="" />
+</p>
+
+</div>
+
+<h4><a name="the_goal" id="the_goal">The goal</a></h4>
+<div class="level4">
+
+<p>
+Let&#039;s assume we want to present on a page the following:
+</p>
+<ul>
+<li class="level1"><div class="li"> All company&#039;s staff.</div>
+</li>
+<li class="level1"><div class="li"> Some element allowing to filter staff by a department.</div>
+</li>
+<li class="level1"><div class="li"> Details of the selected employee.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="chosen_components" id="chosen_components">Chosen Components</a></h4>
+<div class="level4">
+
+<p>
+Clearly, we need several components to achieve this. <br/>
+
+The final set of components can very, but we&#039;ve chosen the following:
+</p>
+<ul>
+<li class="level1"><div class="li"> dhtmlxCombo - allows to filter employees by a department.</div>
+</li>
+<li class="level1"><div class="li"> dhtmlxGrid - contains department&#039;s employees.</div>
+</li>
+<li class="level1"><div class="li"> dhtmlxForm - contains employee&#039;s details.</div>
+</li>
+<li class="level1"><div class="li"> dhtmlxlayout - allows to group elements on a page.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="implementation" id="implementation">Implementation</a></h4>
+<div class="level4">
+
+<p>
+This stage we divided into 4 steps:
+</p>
+<ol>
+<li class="level1"><div class="li"> Components initialization (without data loading, just creating instances and their configuration):<br/>
+ <br/>
+ <pre class="code javascript"><span class="kw2">var</span> layout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+<span class="kw2">var</span> myGrid <span class="sy0">=</span> layout.<span class="me1">cells</span><span class="br0">&#40;</span><span class="st0">&quot;c&quot;</span><span class="br0">&#41;</span>.<span class="me1">attachGrid</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<span class="kw2">var</span> myForm <span class="sy0">=</span> layout.<span class="me1">cells</span><span class="br0">&#40;</span><span class="st0">&quot;b&quot;</span><span class="br0">&#41;</span>.<span class="me1">attachForm</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+<span class="kw2">var</span> myCombo <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXCombo<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> Creating 2 dhtmlXDataStore objects (one with deparments&#039; names and the second with employees details):<br/>
+ <br/>
+ <pre class="code javascript"><span class="kw2">var</span> employees <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXDataStore<span class="br0">&#40;</span><span class="br0">&#41;</span>; 
+<span class="kw2">var</span> departments <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXDataStore<span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre></div>
+</li>
+<li class="level1"><div class="li"> Loading data to components ( through <strong>sync()</strong> method, so-called synchronization dhtmlxDataStore with the representative component):<br/>
+ <br/>
+ <pre class="code javascript">myCombo.<span class="me1">sync</span><span class="br0">&#40;</span>departments<span class="br0">&#41;</span>;<span class="co1">// to load data to the combo</span>
+myGrid.<span class="me1">sync</span><span class="br0">&#40;</span>employees<span class="br0">&#41;</span>; <span class="co1">// to load data to the grid</span></pre></div>
+</li>
+<li class="level1"><div class="li"> Linking represantative components (through <strong>bind()</strong> command):<br/>
+ <br/>
+ <pre class="code javascript">myGrid.<span class="me1">bind</span><span class="br0">&#40;</span>myCombo<span class="sy0">,</span> <span class="kw2">function</span><span class="br0">&#40;</span>data<span class="sy0">,</span> filter<span class="br0">&#41;</span><span class="br0">&#123;</span>   <span class="co1">// to link the grid with the combo </span>
+		<span class="kw1">return</span> myGrid.<span class="me1">cells</span><span class="br0">&#40;</span>data<span class="sy0">,</span> <span class="nu0">2</span><span class="br0">&#41;</span>.<span class="me1">getValue</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> filter.<span class="me1">text</span>;
+	<span class="br0">&#125;</span><span class="br0">&#41;</span>;
+myForm.<span class="me1">bind</span><span class="br0">&#40;</span>myGrid<span class="br0">&#41;</span>;<span class="co1">// to link the form with the grid</span></pre>
+<p>
+  <strong>Beware</strong>, there is a known issue with bounding the grid and the combo in the current datastore version. If you find out that the grid isn&#039;t filtered according to the value selected in the combo, please download the fixed <em>datastore.js</em> file at <a href="https://s3.amazonaws.com/uploads.hipchat.com/15721/61242/i2912yu8s4cdqc8/datastore.zip" class="urlextern" title="https://s3.amazonaws.com/uploads.hipchat.com/15721/61242/i2912yu8s4cdqc8/datastore.zip"  rel="nofollow">https://s3.amazonaws.com/uploads.hipchat.com/15721/61242/i2912yu8s4cdqc8/datastore.zip</a>. <br/>
+ <br/>
+  <img src="datastore_03.png"  class="media" alt="" />
+</p>
+</div>
+</li>
+</ol>
+
+<p>
+
+As you can see we needed just 4 commands to load data and link the components (steps 3 and 4), that proves the stated above: dhtmlXDataStore is really a handy way to store data while dealing with several components.
+</p>
+
+<p>
+<strong>Often repeated problem:</strong><br/>
+
+If you deal with a grid (bind it to smth or smth to it) and the grid (or bound-to-it component) doesn&#039;t display anything, check if you call <strong>mygrid.setColumnIds(&#039;field_1,field_2,field_3&#039;)</strong>, where <em>field_1,field_2,field_3</em> are the names of the related data items of the bound component. 
+</p>
+
+<p>
+There is a known issue with bounding the grid to the combo (in the version to download). If while selecting in the combo a new item, the grid won&#039;t reainted? please, download the fixed datastore.js file at  
+
+</p>
+
+</div>
+
+<h4><a name="related_samples" id="related_samples">Related samples</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <a href="dhtmlxdatastore___datastore_example.html" class="wikilink1" title="dhtmlxdatastore:datastore_example">Full code of the example populated with data from a data file</a>. </div>
+</li>
+<li class="level1"><div class="li"> <a href="dhtmlxdatastore___datastore_example_server-side.html" class="wikilink1" title="dhtmlxdatastore:datastore_example_server-side">Full code of the example populated with data from DB (server-side).</a></div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="74-" /><input type="hidden" name="rev" value="1350494100" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Edit" class="button" title="Step-by-step example" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxdatastore/step-by-step_example.txt &middot; Last modified: 2012/10/17 21:15 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!--<form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>-->
+        <!--<form class="button btn_revs" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_index" method="get" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/docs/lib/exe/indexer.php?id=dhtmlxdatastore%3Astep-by-step_example&amp;1366131655" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2011 Dinamenta, UAB<br />All rights reserved.</div>
+        <form class="button btn_edit" method="post" action="/dhtmlx/docs/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="dhtmlxdatastore:step-by-step_example" /><input type="submit" value="Edit this page" class="button" accesskey="e" title="Edit this page [E]" /></div></form>    	    </div>
+</body>
+</html>
