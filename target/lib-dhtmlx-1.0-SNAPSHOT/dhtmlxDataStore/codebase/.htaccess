@@ -1,8 +1,0 @@
-Options +FollowSymLinks
-Options +Indexes
-RewriteEngine On
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteRule ^(.+\.(js|css)?(skin=(.*))?)$ ../../../dhtmlx4/_dev/make/proxy_less.php?script=$1&skin=$3 [QSA]

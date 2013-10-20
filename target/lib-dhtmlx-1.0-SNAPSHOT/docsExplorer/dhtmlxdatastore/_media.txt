@@ -1,6 +1,0 @@
-icons___file.gif
-dhtmlxdatastore___datastore_company.png
-datastore_03.png
-dhtmlxdatastore___datastore_company_server_side.png
-datastore_company.png
-dhtmlxgrid___connector.png

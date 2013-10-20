@@ -1,6 +1,0 @@
-icons___file.gif
-common___any_ed.gif
-dhtmlxdataview___property.png
-dhtmlxdataview___datamap.png
-dhx.proxy_image.png
-dhtmlxgrid___connector.png
